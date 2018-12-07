@@ -32,7 +32,6 @@ for guard in data:
     if guard not in result:
         result[guard] = {}
     for day in data[guard]:
-        minutes_day = []
         for minute in data[guard][day]:
             if minute in result[guard]:
                 result[guard][minute] += 1
